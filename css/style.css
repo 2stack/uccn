@@ -1,0 +1,153 @@
+.container{
+	width: 100%;
+	font-family: sans-serif;
+}
+
+.top-header{
+	height: 45px;
+	width:  100%;
+	background-color: #222222;
+	color: 	#CACACA;
+	z-index: 9999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.top-header .left {
+	float: left;
+}
+
+.top-header .left li{
+	display: block;
+	float: left;
+	width: 95px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+
+.top-header .left li:hover{
+	background-color: #000;
+	cursor: pointer;
+}
+
+.top-header .right {
+	float: right;
+}
+
+.top-header .right li{
+	display: block;
+	float: left;
+	width: 95px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+
+.top-header .right li:hover{
+	background-color: #000;
+	cursor: pointer;
+}
+
+.center-ad{
+	display: block;
+	width: 100%;
+	height: 520px;
+	background-image: url(../images/ad1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 1;
+}
+
+.ad-content{
+	display: block;
+	width: 100%;
+	height: 520px;
+	z-index: 1;
+}
+ 
+/*高斯模糊效果*/
+.scaled-image {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+}
+
+.blurry-image {
+    -webkit-filter: blur(20px);
+    filter: blur(20px)
+}
+
+.animated-image {
+    -webkit-filter: none;
+    filter: none;
+    transition: background-image .2s ease-out,-webkit-filter .2s ease-out;
+    transition: background-image .2s ease-out,filter .2s ease-out;
+    transition: background-image .2s ease-out,filter .2s ease-out,-webkit-filter .2s ease-out
+}
+
+/*图像变暗效果*/
+.dark-image{
+    filter: brightness(.5)
+}
+
+.ad-content .font{
+	vertical-align: inherit;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 40px;
+    width: 100%;
+    height: 50px;
+}
+
+.ad-content .center-title{
+    position: absolute;
+    top:150px;
+    z-index: 9999;
+    color: #fff;
+}
+
+.ad-content .center-qidian{
+    position: absolute;
+    top:250px;
+    z-index: 9999;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    width: 100%;
+}
+
+.center-qidian .foot{
+	display: inline-block;
+	line-height: 60px;
+	background-color: #fff;
+	color: #626262;
+	width: 500px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.center-qidian .head{
+    display: inline-block;
+    background-color: #F5F5F5;
+    color: #4B4B4B;
+    font-size: 12px;
+    line-height: 60px;
+    width: 115px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    top: -11px;
+}
+
+.center-qidian .head:hover{
+	opacity: 0.9;
+}
