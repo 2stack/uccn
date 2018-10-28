@@ -61,20 +61,19 @@
 	display: block;
 	width: 100%;
 	height: 520px;
-	background-image: url(../images/ad1.jpg);
+	background-image: url(../images/ad3.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	z-index: 1;
 }
 
 .ad-content{
 	display: block;
 	width: 100%;
-	height: 520px;
+	/* height: 520px; */
 	z-index: 1;
 }
  
-/*高斯模糊效果*/
+/*高斯模糊*/
 .scaled-image {
     -webkit-transform: scale(1.05);
     transform: scale(1.05)
@@ -93,7 +92,7 @@
     transition: background-image .2s ease-out,filter .2s ease-out,-webkit-filter .2s ease-out
 }
 
-/*图像变暗效果*/
+/*暗色背景*/
 .dark-image{
     filter: brightness(.5)
 }
@@ -133,6 +132,10 @@
 	width: 500px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+	position: relative;
+	left:-12px;
+	cursor: pointer;
+    letter-spacing: 15px;
 }
 
 .center-qidian .head{
@@ -146,8 +149,97 @@
     border-bottom-left-radius: 5px;
     position: relative;
     top: -11px;
+    cursor: pointer;
 }
 
 .center-qidian .head:hover{
 	opacity: 0.9;
+}
+
+.center-foot-ad{
+	width: 100%
+	height: 80px;
+	min-height: 80px;
+	background-color: #2680EB;
+	z-index: 9999;
+	position: relative;
+}
+
+.center-foot-ad .title{
+	width: 100%;
+	line-height: 80px;
+	text-align: center;
+    vertical-align: inherit;	
+	font-size: 30px;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.center-foot-ad .title a{
+	color: #fff;
+	height: 36px;
+	width: 96px;
+	line-height: 80px;
+	border: 2px solid #fff;
+	border-radius: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+    bottom: 5px;
+}
+
+.center-foot-ad .title a span{
+	display: inline-block;
+	position: relative;
+	top: -28px;
+	font-size: 15px;
+}
+
+.center-foot-ad .title a:hover{
+	background-color: #fff;
+	color: #2680EB;
+	transition: background .3s linear 0s, color .3s linear 0s;
+}
+
+.content{
+	text-align: center;
+	padding-top: 50px;
+	min-height: 380px;
+}
+
+.content h2{
+	font-size: 44px;
+	line-height: 100px;
+}
+
+.content p a{
+	color: #2680EB;
+}
+
+.content .icons{
+	background-image: url(../images/app_icons.png);
+	background-repeat: no-repeat;
+	width: 665px;
+	height: 140px;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+
+.footer{
+	min-height: 100px;
+	background-color: #F2F2F2;
+	color: #888888;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+}
+
+.split-40{
+	height: 40px;
+}
+
+.split-10{
+	height: 10px;
 }
